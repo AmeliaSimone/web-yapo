@@ -1,0 +1,122 @@
+@import "../../../styles/mixins.scss";
+
+.outfit {
+    font-family: "Outfit", sans-serif !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 56px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.outfit2 {
+    font-family: "Outfit", sans-serif !important;
+    color: #1b0045 !important;
+    font-size: 38px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.inter {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 56px;
+    font-weight: 500;
+    background: #ccc;
+    background: linear-gradient(90deg, #06aec3, #311287);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.inter2 {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    color: #0d99ff;
+    font-size: 38px;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.buttonBlack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255) !important;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 5px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    background-color: #1b0045 !important;
+}
+.img {
+    width: 600px;
+    height: 600px;
+
+    @include media-xl() {
+        background-color: red;
+    }
+}
+.section1 {
+    background-color: #fafafa;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.section2 {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    text-align: center;
+}
+.num {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.bold {
+    font-family: "outfit", sans-serif !important;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px !important;
+}
+.regular {
+    font-family: "outfit", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+}
+
+.section3 {
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+.bold2 {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    letter-spacing: 1px !important;
+}
+.regular2 {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px !important;
+    color: rgb(89, 89, 89) !important;
+}
+
+.section4 {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    height: 400px;
+}

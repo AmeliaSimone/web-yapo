@@ -1,0 +1,14 @@
+.capsule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(20deg, #06AEC3, #311287);
+    height: 60px;
+    width: 60px;
+    border-radius: 23px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+}
