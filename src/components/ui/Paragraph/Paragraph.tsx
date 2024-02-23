@@ -1,11 +1,16 @@
 import React from 'react'
 import styles from "./Paragraph.module.scss";
+import withScrollAnimation from "../Framer";
 interface IParagraph{
   className: string, title: string
 }
 const Paragraph = ({className, title}:IParagraph) => {
+  const AnimateDiv = withScrollAnimation("div");
   return (
-    <p className={`${styles.paragraph} ${className}`}>{title}</p>
+    <AnimateDiv>
+      <p className={`${styles.paragraph} ${className}`}>{title}</p>
+    </AnimateDiv>
+    
     
   )
 }

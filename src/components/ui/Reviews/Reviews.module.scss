@@ -3,6 +3,7 @@
 .reviews{
     width: 550px;
     padding: 10px;
+    overflow: hidden;
     
     @include media-xl() {
        width: 350px;
@@ -15,6 +16,7 @@
         font-weight: 400;
         text-align: justify;
         color: white;
+       // animation: slideLeft 3s ease-in-out forwards ;
 
         @include media-xl() {
             font-size: 18px;
@@ -30,9 +32,20 @@
         border-top: 1px solid white;
         border-right: 1px solid white;
         color: white;
+       // animation: slideLeft 3s ease-in-out forwards;
 
         @include media-xl() {
             font-size: 14px;
          }
     }
 }
+@keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  

@@ -18,9 +18,11 @@ import { dataStep } from "@/data/vehicle";
 import Reviews from "@/components/ui/Reviews";
 import { useRouter } from "next/navigation";
 import config from "@/util/config";
+import withScrollAnimation from "@/components/ui/Framer";
 
 export const Case = () => {
   const router = useRouter();
+  const AnimateDiv = withScrollAnimation("div");
   return (
     <Screen>
       <NavBar />
@@ -28,10 +30,12 @@ export const Case = () => {
       <div className={styles.contentOne}>
         <ContentCell gap="20px" className={styles.cotentcellCase}>
           <ContentCell gap="20px">
-            <h1 className={styles.outfit}>
-              <span className={styles.inter}>Comienza a transferir </span> un
-              vehículo en línea
-            </h1>
+            <AnimateDiv>
+              <h1 className={styles.outfit}>
+                <span className={styles.inter}>Comienza a transferir </span> un
+                vehículo en línea
+              </h1>
+            </AnimateDiv>
 
             <Paragraph
               title="Transfiere un vehículo desde tu hogar y firma el contrato con
@@ -39,33 +43,41 @@ export const Case = () => {
               className={styles.paragraphOne}
             />
           </ContentCell>
+          <AnimateDiv>
+            <ContentRow gap="10px" className={styles.buttons}>
+              <Button
+                text="Revisar documentos"
+                className={styles.buttonWhite}
+                onClick={() => {
+                  router.push(config.app_customer);
+                }}
+              ></Button>
+              <Button
+                text="Comenzar transferencia"
+                className={styles.buttonBlack}
+                onClick={() => {
+                  router.push(config.app_vehicle);
+                }}
+              ></Button>
+            </ContentRow>
+          </AnimateDiv>
 
-          <ContentRow gap="10px" className={styles.buttons}>
-            <Button
-              text="Revisar documentos"
-              className={styles.buttonWhite}
-              onClick={() => {
-                router.push(config.app_customer);
-              }}
-            ></Button>
-            <Button
-              text="Comenzar transferencia"
-              className={styles.buttonBlack}
-              onClick={() => {
-                router.push(config.app_vehicle);
-              }}
-            ></Button>
-          </ContentRow>
-          <img src="./yapo.png" className={styles.logoYapo} alt="" />
+          <AnimateDiv>
+            <img src="./yapo.png" className={styles.logoYapo} alt="" />
+          </AnimateDiv>
         </ContentCell>
-        <img src={"/img2.svg"} alt="Image 1" className={styles.img} />
+        <AnimateDiv>
+          <img src={"/img2.svg"} alt="Image 1" className={styles.img} />
+        </AnimateDiv>
       </div>
 
       <ContentCell className={styles.section2} gap="30px">
-        <h2 className={styles.outfit2}>
-          <span className={styles.inter2}>Vende o compra</span>un vehículo en 3
-          pasos
-        </h2>
+        <AnimateDiv>
+          <h2 className={styles.outfit2}>
+            <span className={styles.inter2}>Vende o compra</span>un vehículo en
+            3 pasos
+          </h2>
+        </AnimateDiv>
 
         <Paragraph
           className=""
@@ -97,65 +109,92 @@ export const Case = () => {
       </ContentCell>
 
       <ContentCell className={styles.section3} gap="70px">
-        <h2 className={styles.outfit2}>
-          ¿Por qué realizar la
-          <span className={styles.inter2}>transferencia</span> con PortalFirma?
-        </h2>
+        <AnimateDiv>
+          <h2 className={styles.outfit2}>
+            ¿Por qué realizar la
+            <span className={styles.inter2}>transferencia</span> con
+            PortalFirma?
+          </h2>
+        </AnimateDiv>
 
         <ContentRow className={styles.contentCardIcon} gap="50px">
-          <CardIcon
-            icon="shield"
-            title="Factibilidad"
-            text="Validamos que no presenten restricciones."
-          />
-          <CardIcon
-            icon="pin_drop"
-            title="Rapidez"
-            text="Transfiere sin salir de tu hogar."
-          />
-          <CardIcon
-            icon="smartphone"
-            title="Seguimiento"
-            text="Realiza seguimiento vía WhatsApp"
-          />
+          <AnimateDiv>
+            <CardIcon
+              icon="shield"
+              title="Factibilidad"
+              text="Validamos que no presenten restricciones."
+            />
+          </AnimateDiv>
+          <AnimateDiv>
+            <CardIcon
+              icon="pin_drop"
+              title="Rapidez"
+              text="Transfiere sin salir de tu hogar."
+            />
+          </AnimateDiv>
+          <AnimateDiv>
+            <CardIcon
+              icon="smartphone"
+              title="Seguimiento"
+              text="Realiza seguimiento vía WhatsApp"
+            />
+          </AnimateDiv>
         </ContentRow>
 
         <ContentRow className={styles.contentCardIcon} gap="50px">
-          <CardIcon
-            icon="devices"
-            title="Comodidad"
-            text="Firma el contrato con firma electrónica avanzada."
-          />
-          <CardIcon
-            icon="directions_car"
-            title="TAG"
-            text="Solicita tu nuevo TAG a domicilio o devuelve el antiguo
+          <AnimateDiv>
+            <CardIcon
+              icon="devices"
+              title="Comodidad"
+              text="Firma el contrato con firma electrónica avanzada."
+            />
+          </AnimateDiv>
+          <AnimateDiv>
+            <CardIcon
+              icon="directions_car"
+              title="TAG"
+              text="Solicita tu nuevo TAG a domicilio o devuelve el antiguo
             sin salir de tu casa."
-          />
-          <CardIcon
-            icon="description"
-            title="Inscripción"
-            text="Inscripción rápido y seguro."
-          />
+            />
+          </AnimateDiv>
+          <AnimateDiv>
+            <CardIcon
+              icon="description"
+              title="Inscripción"
+              text="Inscripción rápido y seguro."
+            />
+          </AnimateDiv>
         </ContentRow>
       </ContentCell>
 
       <div className={styles.contentCardProgress}>
+        <AnimateDiv>
         <h2 className={styles.outfit2}>Guía paso a paso</h2>
+        </AnimateDiv>
+        
 
         <CardProgress data={dataStep} />
       </div>
 
       <div className={styles.contentReview}>
-        <Reviews />
+        <AnimateDiv>
+        <Reviews/>
+        </AnimateDiv>
+        
 
         <div className={styles.contentTitleReview}>
+          <AnimateDiv>
           <h1 className={styles.titleReview}>
             ¿<span>Que piensan</span> de PortalFirma?
           </h1>
+          </AnimateDiv>
+        
+          <AnimateDiv>
           <h2 className={styles.titleReviewH2}>
             Descubre lo que dicen nuestros clientes.
           </h2>
+          </AnimateDiv>
+          
         </div>
       </div>
 
