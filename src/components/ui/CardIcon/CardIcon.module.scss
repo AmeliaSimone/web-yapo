@@ -1,0 +1,32 @@
+@import "../../../styles/mixins.scss";
+.cardIcon {
+    width: 350px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    span {
+        font-size: 50px;
+        color: #4900be;
+    }
+
+    .cardIconContent {
+        width: 300px;
+
+        h1 {
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            text-align: left;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            width: 100%;
+            text-align: left;
+            color: rgb(89, 89, 89);
+        }
+    }
+}

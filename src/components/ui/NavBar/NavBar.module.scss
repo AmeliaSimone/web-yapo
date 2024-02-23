@@ -1,0 +1,76 @@
+@import "../../../styles/mixins.scss";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 70px;
+  padding: 0px 40px 0px 40px;
+  z-index: 20;
+  background: #1b0045;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+
+  @include media-xl() {
+    padding: 0px 20px 0px 20px;
+  }
+
+  img {
+    cursor: pointer;
+    width: 210px;
+    transition: transform 0.3s linear;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    transition: right 0.4s;
+
+    @include media-xl() {
+      position: fixed;
+      top: 60px;
+      width: 100vw;
+      height: calc(100vh - 60px);
+      flex-direction: column;
+      background: #1b0045;
+      justify-content: center;
+      gap: 35px;
+    }
+
+    li {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s linear;
+
+      @include media-xl() {
+        font-size: 22px;
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+
+      &:hover {
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+  span {
+    color: #ffffff;
+    font-size: 30px;
+    display: none;
+
+    @include media-xl() {
+      display: flex;
+    }
+  }
+}

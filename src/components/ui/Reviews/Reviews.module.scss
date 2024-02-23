@@ -1,0 +1,38 @@
+@import "../../../styles/mixins.scss";
+
+.reviews{
+    width: 550px;
+    padding: 10px;
+    
+    @include media-xl() {
+       width: 350px;
+       padding: 30px;
+    }
+    h1{
+        width: 100%;
+        max-height: 200px;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: justify;
+        color: white;
+
+        @include media-xl() {
+            font-size: 18px;
+         }
+    }
+    p{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: end;
+        padding-top: 10px;
+        padding-right: 5px;
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        color: white;
+
+        @include media-xl() {
+            font-size: 14px;
+         }
+    }
+}

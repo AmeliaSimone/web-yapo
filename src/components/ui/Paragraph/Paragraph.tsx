@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from "./Paragraph.module.scss";
-
-const Paragraph = ({className, children}:any) => {
+interface IParagraph{
+  className: string, title: string
+}
+const Paragraph = ({className, title}:IParagraph) => {
   return (
-    <p className={`${styles.paragraph} ${className}`}>{children}</p>
+    <p className={`${styles.paragraph} ${className}`}>{title}</p>
     
   )
 }

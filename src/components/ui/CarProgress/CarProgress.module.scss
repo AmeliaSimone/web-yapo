@@ -1,0 +1,109 @@
+.cardProgress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  
+    .itemPro {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 320px;
+      height: 230px;
+      position: relative;
+      border-radius: 7px;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  
+      .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background-color: #1b0045;
+        font-weight: 800;
+        color: aliceblue;
+        font-size: 20px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+      }
+  
+      .alert {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 110px;
+        height: 40px;
+        border-radius: 7px;
+        border: 1px solid #ffffff;
+        background-color: #450000;
+        font-weight: 400;
+        color: rgb(255, 240, 240);
+        font-size: 16px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+      }
+  
+      .contenImg {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        border-radius: 7px;
+  
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 70%; /* Altura del degradado en la parte inferior */
+          background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgb(255, 255, 255) 100%
+          );
+        }
+  
+        img {
+          border-radius: 7px 7px 0 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+  
+      .contenInfo {
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        background-color: #ffffff;
+        bottom: 0;
+        border-radius: 0 0 7px 7px;
+  
+        h1 {
+          width: 100%;
+          height: 30px;
+          padding: 0 10px;
+          text-align: center;
+          font-weight: 500;
+          color: #1b0045;
+          font-size: 18px;
+        }
+        p {
+          width: 100%;
+          padding: 0 10px;
+          text-align: center;
+        }
+      }
+    }
+  }

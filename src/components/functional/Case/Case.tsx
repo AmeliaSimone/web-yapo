@@ -11,172 +11,155 @@ import Title from "@/components/ui/Title";
 import Button from "@/components/ui/Button";
 import Capsule from "@/components/ui/Capsule";
 import Icon from "@/components/ui/Icon";
+import NavBar from "@/components/ui/NavBar";
+import Footer from "@/components/ui/Footer";
+import Paragraph from "@/components/ui/Paragraph";
+import CardProgress from "@/components/ui/CarProgress";
+import CardIcon from "@/components/ui/CardIcon";
+import Card from "@/components/ui/Card";
 
 import styles from "./Case.module.scss";
-import { Content } from "next/font/google";
-import Paragraph from "@/components/ui/Paragraph";
+import { dataStep } from "@/data/vehicle";
+import Reviews from "@/components/ui/Reviews";
 
 export const Case = () => {
   return (
     <Screen>
-      <Header />
+      <NavBar />
 
-      <ContentCell className={styles.section1}>
-        <ContentRow>
+      <div className={styles.contentOne}>
+        <ContentCell gap="20px">
           <ContentCell gap="20px">
-            <ContentCell gap="20px">
-              <Title text="Comienza a transferir" className={styles.inter} />
-              <Title text="un vehículo en línea" className={styles.outfit} />
-              <Paragraph>
-                Transfiere un vehículo desde tu hogar y firma el contrato con{" "}
-                <br /> firma electrónica avanzada de forma rápida, segura y por
-                sólo <br /> $44.990 (Valor normal $49.990)
-              </Paragraph>
-            </ContentCell>
+            <h1 className={styles.outfit}>
+              <span className={styles.inter}>Comienza a transferir </span> un
+              vehículo en línea
+            </h1>
 
-            <ContentRow gap="10px" className={styles.buttons}>
-              <Button text="Revisar documentos"></Button>
-              <Button
-                text="Comenzar transferencia"
-                className={styles.buttonBlack}
-              ></Button>
-            </ContentRow>
-            <Paragraph>Contamos con el respaldo y difusión de ANAC</Paragraph>
+            <Paragraph
+              title="Transfiere un vehículo desde tu hogar y firma el contrato con
+                firma electrónica avanzada, simple o visada, de forma rápida y segura. "
+              className={styles.paragraphOne}
+            />
           </ContentCell>
 
-          <img src={"/img1.png"} alt="Image 1" className={styles.img} />
-        </ContentRow>
-      </ContentCell>
+          <ContentRow gap="10px" className={styles.buttons}>
+            <Button
+              text="Revisar documentos"
+              className={styles.buttonWhite}
+            ></Button>
+            <Button
+              text="Comenzar transferencia"
+              className={styles.buttonBlack}
+            ></Button>
+          </ContentRow>
+          <Paragraph
+            title="El futuro de la firma digital es ahora."
+            className={styles.paragrapghTwo}
+          />
+        </ContentCell>
+        <img src={"/img2.svg"} alt="Image 1" className={styles.img} />
+      </div>
 
       <ContentCell className={styles.section2} gap="30px">
-        <ContentRow>
-          <Title text="Vende o compra" className={styles.inter2} />
-          <Title text="un vehículo en 3 pasos" className={styles.outfit2} />
-        </ContentRow>
-        <Paragraph>
-          Transfiere un vehículo desde donde quieras y sin filas de espera.
-        </Paragraph>
-        <ContentRow gap="50px">
-          <ContentCell className={styles.num}>
-            <Capsule text="1"></Capsule>
-            <Paragraph className={styles.bold}>
-              Factibilidad de transferencia
-            </Paragraph>
-            <Paragraph className={styles.regular}>
-              Completamos los datos del vendedor y <br /> comprador para la
-              creación y firma del <br />
-              contrato.
-            </Paragraph>
-          </ContentCell>
-          <ContentCell className={styles.num}>
-            <Capsule text="2"></Capsule>
-            <Paragraph className={styles.bold}>
-              Creación y firma del contrato
-            </Paragraph>
-            <Paragraph className={styles.regular}>
-              Completamos los datos del vendedor y <br /> comprador para la
-              creación del contrato y firma <br />
-              con Clave Única.
-            </Paragraph>
-          </ContentCell>
-          <ContentCell className={styles.num}>
-            <Capsule text="3"></Capsule>
-            <Paragraph className={styles.bold}>
-              Formalización de transferencia
-            </Paragraph>
-            <Paragraph className={styles.regular}>
-              El contrato queda <br /> autorizado legalmente y es <br />{" "}
-              ingresado a la Institución Oficial.
-            </Paragraph>
-          </ContentCell>
+        <h2 className={styles.outfit2}>
+          <span className={styles.inter2}>Vende o compra</span>un vehículo en 3
+          pasos
+        </h2>
+
+        <Paragraph
+          className=""
+          title="Transfiere un vehículo desde donde quieras y sin filas de espera."
+        />
+
+        <ContentRow className={styles.cardNums} gap="50px">
+          <Card
+            num={1}
+            title="Factibilidad de transferencia"
+            text="Completamos los datos del vendedor y comprador para la
+              creación y firma del 
+              contrato."
+          />
+          <Card
+            num={2}
+            title="Creación y firma del contrato"
+            text="Completamos los datos del vendedor y  comprador para la
+            creación del contrato y firma 
+            con Clave Única."
+          />
+          <Card
+            num={3}
+            title="Formalización de transferencia"
+            text="El contrato queda autorizado legalmente y es 
+            ingresado a la Institución Oficial."
+          />
         </ContentRow>
       </ContentCell>
 
       <ContentCell className={styles.section3} gap="70px">
-        <ContentRow>
-          <Title text="¿Por qué realizar la" className={styles.outfit2} />
-          <Title text="transferencia" className={styles.inter2} />
-          <Title text=" con icartransfer?" className={styles.outfit2} />
-        </ContentRow>
-        <ContentRow gap="50px">
-          <ContentRow gap="20px">
-            <Icon iconName="shield" color="#311287"></Icon>
-            <ContentCell>
-              <Paragraph text="Paragraph" className={styles.bold2}>
-                Factibilidad
-              </Paragraph>
-              <Paragraph text="texto" className={styles.regular2}>
-                Validamos que no presenten restricciones.
-              </Paragraph>
-            </ContentCell>
-          </ContentRow>
+        <h2 className={styles.outfit2}>
+          ¿Por qué realizar la
+          <span className={styles.inter2}>transferencia</span> con PortalFirma?
+        </h2>
 
-          <ContentRow gap="20px">
-            <Icon iconName="pin_drop" color="#311287"></Icon>
-            <ContentCell>
-              <Paragraph text="Paragraph" className={styles.bold2}>
-                Rapidez
-              </Paragraph>
-              <Paragraph text="texto" className={styles.regular2}>
-                Transfiere sin salir de tu hogar.
-              </Paragraph>
-            </ContentCell>
-          </ContentRow>
-
-          <ContentRow gap="20px">
-            <Icon iconName="smartphone" color="#311287"></Icon>
-            <ContentCell>
-              <Paragraph text="Paragraph" className={styles.bold2}>
-                Seguimiento
-              </Paragraph>
-              <Paragraph text="texto" className={styles.regular2}>
-                Realiza seguimiento vía WhatsApp.
-              </Paragraph>
-            </ContentCell>
-          </ContentRow>
+        <ContentRow className={styles.contentCardIcon} gap="50px">
+          <CardIcon
+            icon="shield"
+            title="Factibilidad"
+            text="Validamos que no presenten restricciones."
+          />
+          <CardIcon
+            icon="pin_drop"
+            title="Rapidez"
+            text="Transfiere sin salir de tu hogar."
+          />
+          <CardIcon
+            icon="smartphone"
+            title="Seguimiento"
+            text="Realiza seguimiento vía WhatsApp"
+          />
         </ContentRow>
 
-        <ContentRow gap="50px">
-          <ContentRow gap="20px">
-            <Icon iconName="devices" color="#311287"></Icon>
-            <ContentCell>
-              <Paragraph text="Paragraph" className={styles.bold2}>
-                Comodidad
-              </Paragraph>
-              <Paragraph text="texto" className={styles.regular2}>
-                Firma el contrato con firma electrónica <br /> avanzada.
-              </Paragraph>
-            </ContentCell>
-          </ContentRow>
-
-          <ContentRow gap="20px">
-            <Icon iconName="directions_car" color="#311287"></Icon>
-            <ContentCell>
-              <Paragraph text="Paragraph" className={styles.bold2}>
-                TAG
-              </Paragraph>
-              <Paragraph text="texto" className={styles.regular2}>
-                Solicita tu nuevo TAG a domicilio o devuelve <br /> el antiguo
-                sin salir de tu casa.
-              </Paragraph>
-            </ContentCell>
-          </ContentRow>
-
-          <ContentRow gap="20px">
-            <Icon iconName="description" color="#311287"></Icon>
-            <ContentCell>
-              <Paragraph text="Paragraph" className={styles.bold2}>
-                Inscripción
-              </Paragraph>
-              <Paragraph text="texto" className={styles.regular2}>
-                Inscripción rápido y seguro.
-              </Paragraph>
-            </ContentCell>
-          </ContentRow>
+        <ContentRow className={styles.contentCardIcon} gap="50px">
+          <CardIcon
+            icon="devices"
+            title="Comodidad"
+            text="Firma el contrato con firma electrónica avanzada."
+          />
+          <CardIcon
+            icon="directions_car"
+            title="TAG"
+            text="Solicita tu nuevo TAG a domicilio o devuelve el antiguo
+            sin salir de tu casa."
+          />
+          <CardIcon
+            icon="description"
+            title="Inscripción"
+            text="Inscripción rápido y seguro."
+          />
         </ContentRow>
       </ContentCell>
 
-      
+      <div className={styles.contentCardProgress}>
+        
+          <h2 className={styles.outfit2}>Guía paso a paso</h2>
+        
+        <CardProgress data={dataStep} />
+      </div>
+
+      <div className={styles.contentReview}>
+        <Reviews />
+
+        <div className={styles.contentTitleReview}>
+          <h1 className={styles.titleReview}>
+            ¿<span>Que piensan</span> de PortalFirma?
+          </h1>
+          <h2 className={styles.titleReviewH2}>
+            Descubre lo que dicen nuestros clientes.
+          </h2>
+        </div>
+      </div>
+
+      <Footer />
     </Screen>
   );
 };
