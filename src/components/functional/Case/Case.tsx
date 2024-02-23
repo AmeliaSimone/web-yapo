@@ -1,16 +1,11 @@
+"use client";
 import React from "react";
-
-import Image from "next/image";
 
 import Screen from "@/components/layout/Screen";
 import ContentRow from "@/components/layout/ContentRow";
 import ContentCell from "@/components/layout/ContentCell";
 
-import Header from "@/components/ui/Header";
-import Title from "@/components/ui/Title";
 import Button from "@/components/ui/Button";
-import Capsule from "@/components/ui/Capsule";
-import Icon from "@/components/ui/Icon";
 import NavBar from "@/components/ui/NavBar";
 import Footer from "@/components/ui/Footer";
 import Paragraph from "@/components/ui/Paragraph";
@@ -21,14 +16,17 @@ import Card from "@/components/ui/Card";
 import styles from "./Case.module.scss";
 import { dataStep } from "@/data/vehicle";
 import Reviews from "@/components/ui/Reviews";
+import { useRouter } from "next/navigation";
+import config from "@/util/config";
 
 export const Case = () => {
+  const router = useRouter();
   return (
     <Screen>
       <NavBar />
 
       <div className={styles.contentOne}>
-        <ContentCell gap="20px">
+        <ContentCell gap="20px" className={styles.cotentcellCase}>
           <ContentCell gap="20px">
             <h1 className={styles.outfit}>
               <span className={styles.inter}>Comienza a transferir </span> un
@@ -46,16 +44,19 @@ export const Case = () => {
             <Button
               text="Revisar documentos"
               className={styles.buttonWhite}
+              onClick={() => {
+                router.push(config.app_customer);
+              }}
             ></Button>
             <Button
               text="Comenzar transferencia"
               className={styles.buttonBlack}
+              onClick={() => {
+                router.push(config.app_vehicle);
+              }}
             ></Button>
           </ContentRow>
-          <Paragraph
-            title="El futuro de la firma digital es ahora."
-            className={styles.paragrapghTwo}
-          />
+          <img src="./yapo.png" className={styles.logoYapo} alt="" />
         </ContentCell>
         <img src={"/img2.svg"} alt="Image 1" className={styles.img} />
       </div>
@@ -140,9 +141,8 @@ export const Case = () => {
       </ContentCell>
 
       <div className={styles.contentCardProgress}>
-        
-          <h2 className={styles.outfit2}>Guía paso a paso</h2>
-        
+        <h2 className={styles.outfit2}>Guía paso a paso</h2>
+
         <CardProgress data={dataStep} />
       </div>
 

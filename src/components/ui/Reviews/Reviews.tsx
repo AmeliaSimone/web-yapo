@@ -5,7 +5,7 @@ const Reviews = () => {
   return (
     <div className={styles.reviews}>
       <h1>
-        Muy ágil la comunicación con el ejecutivo a través de WhatsApp. Además
+        Muy ágil la comunicación con la administración. Además
         el valor del servicio muy accesible, definitivamente mi próxima
         transferencia la realizaré con ustedes.
       </h1>

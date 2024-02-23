@@ -1,326 +1,344 @@
 @import "../../../styles/mixins.scss";
 
 .outfit {
-    font-family: "Outfit", sans-serif !important;
-    color: rgb(0, 0, 0) !important;
-    font-size: 56px;
-    font-weight: 500;
-    padding-left: 5px;
+  font-family: "Outfit", sans-serif !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 56px;
+  font-weight: 500;
+  padding-left: 5px;
 
-    @include media-xl() {
-        font-size: 30px;
-        width: 100%;
-        text-align: center;
-    }
+  @include media-xl() {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .outfit2 {
-    font-family: "Outfit", sans-serif !important;
-    color: #1b0045 !important;
-    font-size: 38px;
-    font-weight: 500;
-    padding-left: 5px;
+  font-family: "Outfit", sans-serif !important;
+  color: #1b0045 !important;
+  font-size: 38px;
+  font-weight: 500;
+  padding-left: 5px;
 
-    @include media-xl() {
-        font-size: 27px;
-        width: 95%;
-        align-items: center;
-        padding-left: 0px;
-        text-align: center;
-    }
+  @include media-xl() {
+    font-size: 27px;
+    width: 95%;
+    align-items: center;
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 .outfit3 {
-    font-family: "Outfit", sans-serif !important;
-    color: #ffffff !important;
-    font-size: 38px;
-    font-weight: 500;
-    padding-left: 5px;
+  font-family: "Outfit", sans-serif !important;
+  color: #ffffff !important;
+  font-size: 38px;
+  font-weight: 500;
+  padding-left: 5px;
 }
 .inter {
-    color: #000;
-    font-family: "Inter", sans-serif;
-    font-size: 56px;
-    font-weight: 500;
-    background: #ccc;
-    background: linear-gradient(90deg, #06aec3, #311287);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  background: #ccc;
+  background: linear-gradient(90deg, #06aec3, #311287);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 
-    @include media-xl() {
-        font-size: 30px;
-        width: 100%;
-        text-align: center;
-    }
+  @include media-xl() {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .inter2 {
-    font-family: "Inter", sans-serif;
-    color: #0d99ff;
-    font-size: 38px;
-    font-weight: 500;
-    padding-left: 5px;
-    padding-right: 5px;
+  font-family: "Inter", sans-serif;
+  color: #0d99ff;
+  font-size: 38px;
+  font-weight: 500;
+  padding-left: 5px;
+  padding-right: 5px;
 
-    @include media-xl() {
-        font-size: 27px;
-    }
+  @include media-xl() {
+    font-size: 27px;
+  }
 }
 .buttonBlack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255) !important;
-    height: 40px;
-    padding: 0 10px;
-    border: none;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 16px;
-    gap: 5px;
-    font-family: "Inter", sans-serif;
-    cursor: pointer;
-    background-color: #1b0045 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255) !important;
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  gap: 5px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  background-color: #1b0045 !important;
 
-    @include media-xl() {
-        width: 90%;
-    }
+  @include media-xl() {
+    width: 90%;
+  }
 }
 .buttonWhite {
-    @include media-xl() {
-        width: 90%;
-    }
+  @include media-xl() {
+    width: 90%;
+  }
 }
 .img {
-    width: 600px;
-    height: 600px;
+  width: 700px;
+  height: 700px;
 
-    @include media-xl() {
-        width: 350px;
-        height: 400px;
-    }
+  @include media-xl() {
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+  }
 }
 .section1 {
-    background-color: #fafafa;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
+  background-color: #fafafa;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
 
-    @include media-xl() {
-        height: auto;
-        width: 900px;
-    }
+  @include media-xl() {
+    height: auto;
+    width: 900px;
+  }
 }
 .buttons {
-    padding-top: 50px;
-    padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 
-    @include media-xl() {
-        padding-top: 30px;
-        padding-bottom: 10px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  @include media-xl() {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 .section2 {
-    align-items: center;
-    justify-content: center;
-    height: 600px;
-    text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  text-align: center;
 
-    @include media-xl() {
-        height: auto;
-        width: 100%;
-    }
+  @include media-xl() {
+    height: auto;
+    width: 100%;
+  }
 }
 .num {
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
 }
 .bold {
-    font-family: "outfit", sans-serif !important;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 1px !important;
+  font-family: "outfit", sans-serif !important;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px !important;
 }
 .regular {
-    font-family: "outfit", sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    letter-spacing: 1px !important;
+  font-family: "outfit", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
 }
 
 .section3 {
-    display: flex;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    background-color: #fafafa;
-    width: 100%;
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  width: 100%;
 
-    @include media-xl() {
-        height: auto;
-        padding-top: 30px;
-        gap: 20px !important;
-    }
+  @include media-xl() {
+    height: auto;
+    padding-top: 30px;
+    gap: 20px !important;
+  }
 }
 .bold2 {
-    font-family: "Inter", sans-serif !important;
-    font-weight: 500 !important;
-    font-size: 14px !important;
-    letter-spacing: 1px !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  letter-spacing: 1px !important;
 }
 .regular2 {
-    font-family: "Inter", sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 13px !important;
-    letter-spacing: 0.5px !important;
-    color: rgb(89, 89, 89) !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.5px !important;
+  color: rgb(89, 89, 89) !important;
 }
 
 .section4 {
-    align-items: start;
-    justify-content: left;
-    background-color: #262626;
-    height: 400px;
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 20px;
+  align-items: start;
+  justify-content: left;
+  background-color: #262626;
+  height: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 20px;
 }
 .white {
-    color: white !important;
-    margin-left: 320px;
+  color: white !important;
+  margin-left: 320px;
 }
 .para_white {
-    color: white !important;
-    margin-left: 100px;
+  color: white !important;
+  margin-left: 100px;
 
-    padding-top: 100px;
+  padding-top: 100px;
 }
 .autor {
-    color: white !important;
-    justify-content: end;
-    margin-top: 40px;
-    padding-left: 350px;
-    margin-left: 50px;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
+  color: white !important;
+  justify-content: end;
+  margin-top: 40px;
+  padding-left: 350px;
+  margin-left: 50px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
 }
 .title3 {
-    margin-left: 200px;
-    margin-top: 100px;
+  margin-left: 200px;
+  margin-top: 100px;
 }
 
 .contentOne {
-    width: 85%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid rgb(147, 147, 147);
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(147, 147, 147);
 
-    @include media-xl() {
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        background-color: #fafafa;
-    }
+  @include media-xl() {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: #fafafa;
+  }
 }
 .contentCardProgress {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
 }
 .contentReview {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 95%;
-    background-color: #262626;
-    border-radius: 20px;
-    height: 400px;
-    margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  background-color: #262626;
+  border-radius: 20px;
+  height: 400px;
+  margin-top: 30px;
 
-    @include media-xl() {
-        flex-direction: column-reverse;
-        height: auto;
-        padding-top: 30px;
-    }
+  @include media-xl() {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 30px;
+  }
 }
 .contentInfoReview {
-    background-color: #06aec3;
+  background-color: #06aec3;
 }
 .contentTitleReview {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 .titleReview {
+  font-size: 38px;
+  font-weight: 500;
+  color: #ffffff;
+
+  @include media-xl() {
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+  }
+
+  span {
     font-size: 38px;
     font-weight: 500;
-    color: #ffffff;
+    color: #0d99ff;
 
     @include media-xl() {
-        width: 100%;
-        text-align: center;
-        font-size: 27px;
+      font-size: 27px;
     }
-
-    span {
-        font-size: 38px;
-        font-weight: 500;
-        color: #0d99ff;
-
-        @include media-xl() {
-            font-size: 27px;
-        }
-    }
+  }
 }
 .titleReviewH2 {
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 
-    @include media-xl() {
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-        padding: 10px 0px;
-    }
+  @include media-xl() {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0px;
+  }
 }
 .paragraphOne {
-    @include media-xl() {
-        text-align: center;
-    }
+  @include media-xl() {
+    text-align: center;
+  }
 }
 
 .paragrapghTwo {
-    @include media-xl() {
-        text-align: center;
-    }
+  @include media-xl() {
+    text-align: center;
+  }
 }
 .cardNums {
-    @include media-xl() {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  @include media-xl() {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .contentCardIcon {
-    @include media-xl() {
-        gap: 20px !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  @include media-xl() {
+    gap: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.logoYapo {
+  width: 280px;
+  margin-left: 20px;
+  @include media-xl() {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+  }
+}
+
+.cotentcellCase {
+  @include media-xl() {
+    align-items: center;
+  }
 }
